@@ -1,11 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[70]:
-
-
 import mysql.connector as mc
-import random as rd
+
 con=mc.connect(host='127.0.0.1',user='root',password='1234')
 cur=con.cursor()
 cur.execute('Create Database if not exists ATM')
@@ -247,4 +241,3 @@ while 1:
             break
 con.commit()
 con.close()
-
